@@ -1,0 +1,108 @@
+<html>
+<form action="" method="get" name="formname">
+	/* Content */
+</form>
+<label>First Name: <input type="text"></label> 
+<label>Last Name: <input type="text"></label>
+<label>First Name: <input type="text"></label>
+<label for="lname">Last Name:</label>
+<input type="text" id="lname">
+ <form>
+    <label for="fname">First Name:</label> 
+    <input type="text" value="First Name" id="fname" >
+
+    <label for="lname">Last Name:</label>
+    <input type="text" value="Last Name" id="lname" >
+</form>
+<form>
+<label for="fname">First Name:</label>
+<input type="text" id="fname" maxlength="10">
+
+<label for="age">Age:</label>
+<input type="text" id="age" maxlength="3">
+</form>
+<label>Age: <input type="text" size="3"> </label>
+<label>Pincode: <input type="text" size="6" maxlength="6"></label>
+<form>
+    <label for="pwd">Password:</label>
+    <input type="password" id="pwd" >
+</form>
+<form>
+    <label for="resume">Resume:</label> 
+    <input type="file" id="resume">
+</form>
+<form>
+    <label for="pics">Upload pictures : </label> 
+    <input type="file" id="pics" multiple>
+</form>
+<label>Age: <input type="file" accept=".pdf"> </label>
+<label>Age: <input type="file" accept=".jpg, .png"> </label>
+<input type="radio" name="gender" id="male"> 
+    <label for="male">Male</label>
+    
+    <input type="radio" name="gender" id="female"> 
+    <label for="female">Female</label>
+	<label> <input type="checkbox"> :Bike</label>
+<label> <input type="checkbox"> :Car</label>
+<input type="checkbox" disabled>>
+<label><input type="checkbox" checked>: I Agree</label> 
+<select>
+        <option selected disabled>--Select City--</option>
+        <option>New York</option>
+        <option>Chicago</option>
+        <option>Los Angeles</option>
+        <option>Washington DC</option>
+    </select>
+	<select>
+    <option selected disabled>--Select City--</option>
+    <optgroup label="Metros">
+        <option>New Delhi</option>
+        <option>Kolkata</option>
+        <option>Mumbai</option>
+        <option>Chennai</option>
+    </optgroup>
+    <optgroup label="Others">
+        <option>Noida</option>
+        <option>Gurgram</option>
+        <option>Faridabad</option>
+        <option>Gaziabad</option>
+    </optgroup>                            
+</select>
+<select multiple>
+    <option selected disabled>--Select City--</option>
+    <optgroup label="Metros">
+        <option>New Delhi</option>
+        <option>Kolkata</option>
+        <option>Mumbai</option>
+        <option>Chennai</option>
+    </optgroup>
+    <optgroup label="Others">
+        <option>Noida</option>
+        <option>Gurgram</option>
+        <option>Faridabad</option>
+        <option>Gaziabad</option>
+    </optgroup>                            
+</select>
+ <textarea></textarea>
+    
+    <textarea rows="4"></textarea>
+    
+    <textarea rows="4" cols="30"></textarea>
+	<input type="submit">
+	<input type="reset">
+	<button>Button</button>
+	<fieldset>
+    <legend>Enquiry Form</legend>
+        <form onsubmit="return false">
+            <label>Name:<input type="text"></label>
+            <input type="submit">
+            <input type="reset"> </form>
+</fieldset>    
+<fieldset disabled>
+    <legend>Enquiry Form</legend>
+        <form onsubmit="return false">
+            <label>Name:<input type="text"></label>
+            <input type="submit">
+            <input type="reset"> </form>
+</fieldset>
+</html>
