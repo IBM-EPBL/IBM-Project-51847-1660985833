@@ -1,0 +1,29 @@
+import os
+import pathlib
+from flask import Flask, render_template, request
+from werkzeug.utils import secure_filename
+
+app = Flask(name)
+
+
+app.config['SECRET_KEY'] = '^%huYtFd90;90jjj'
+app.config['UPLOADED_FILES'] = 'static/files'
+
+
+@app.route('/upload', methods=['GET', 'POST'])
+def upload():
+    if request.method == 'POST' and 'photos' in request.files:
+        uploaded_files = request.files.getlist('photos')
+        task_name = request.form.get('task_name')
+        filename = []
+        pathlib.Path(app.config['UPLOADED_FILES'], task_name).mkdir(exist_ok=True)
+        for file in uploaded_files:
+            filename = secure_filename(file.filename)
+            file.save(os.path.join(app.config['UPLOADED_FILES'], task_name, filename))
+        return task_name
+    return render_template('upload.html')
+
+
+if name == "main":
+    app.run(debug=True)
+Footer
