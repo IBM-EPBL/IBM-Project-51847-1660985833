@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Embedded Style Sheet</title>
+<style>
+  h1  {
+    color: #009;
+    font-size: 1em;
+    margin-bottom: .3em;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  table {
+    margin: .3em;
+    width: 290px;
+  }
+  
+  th {
+    padding: .2em;
+  }
+  
+  td {
+    background-color: #ffc;
+    border: 1px solid #900;
+    padding-left: .5em;
+    padding-right: .5em;
+  }
+  
+  #trHeader {
+    color: #900;
+    text-decoration: underline;
+  }
+  
+  .centerCell {
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div>
+<h1>All-time Home Run Record</h1>
+<table>
+  <tr id="trHeader">
+    <th>Player</th>
+    <th>Home Runs</th>
+    <th>Team</th>
+  </tr>
+  <tr>
+    <td>DHANALAKSHMI</td>
+    <td class="centerCell">762</td>
+    <td>Mumbai</td>
+  </tr>
+  <tr>
+    <td>VICHITHRA</td>
+    <td class="centerCell">755</td>
+    <td>India</td>
+  </tr>
+  <tr>
+    <td>SABARISWARAN</td>
+    <td class="centerCell">714</td>
+    <td>Australia</td>
+  </tr>
+  <tr>
+    <td>	MADHAVAN</td>
+    <td class="centerCell">660</td>
+    <td>delhi</td>
+  </tr>
+</table>
+</div>
+</body>
+</html>
+h1 {
+  text-align: center;
+  font-size: 1em;
+  color: #009;
+  margin-bottom: .3em;
+  text-decoration: underline;
+}
+
+table {
+  margin: .3em;
+  width: 290px;
+}
+
+th {
+  padding: .2em;
+}
+
+td {
+  padding-left: .5em;
+  padding-right: .5em;
+  border: 1px solid #900;
+  background-color: #ffc;
+}
+
+#trHeader {
+  text-decoration: underline;
+  color: #900;
+}
+
+.centerCell {
+  text-align: center;
+}
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
