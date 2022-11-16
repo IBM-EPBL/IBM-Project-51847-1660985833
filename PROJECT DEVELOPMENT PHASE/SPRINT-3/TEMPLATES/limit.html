@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block body %} 
+<style>
+    form{
+        margin-left: 400px;
+        margin-right: 400px;
+        padding: 20px 20px 20px 20px;
+        border-radius: 10px 10px 10px 10px;
+        margin-top: 10px;
+        background-color: aqua;
+        text-align: center;
+        color: #ca0808;
+    }
+    div{
+        margin-left: 400px;
+        margin-right: 400px;
+        padding: 10px 10px 10px 10px;
+        background-color: aqua;
+        border-radius: 10px 10px 10px 10px;
+        text-align: center;
+        color: #0a76d5;
+
+    }
+</style>
+<div>
+<p> Currently your MONTHLY limit is ₹ {{y}} </p></div>
+
+
+<form action="/limitnum" method="POST">
+
+    <p> ENTER the MONTHLY LIMIT to avoid over EXPENSES</p> <br/>
+    <input type="number" name="number" required/> <span> 
+        <button class="btn btn-warning" type="submit">ENTER</button>
+    </span>
+    
+
+
+
+</form>
+{% endblock %}

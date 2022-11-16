@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block body %} 
+<style>
+    .container{
+    margin-left: 400px;
+    margin-right: 400px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 50px;
+    background-color: aqua;
+    text-align: center;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h3 style="color: #2315db;">Add Expense</h3>
+            <form action="/addexpense" method="POST">
+                
+                <div class="form-group">
+                     <label for="" style="color: #ca0808;">Date</label> 
+                     <input class="form-control" type="datetime-local" name="date" id="date"></div><br>
+                <div class="form-group"> <label for="" style="color: #ca0808;">Expense name</label> 
+                    <input class="form-control" type="text" name="expensename" id="expensename">
+                </div><br>
+                <div class="form-group">
+                     <label for="" style="color: #ca0808;">Expense Amount</label> 
+                      <input class="form-control"  type="number" min="0" name="amount" id="amount">
+                </div><br>
+
+                <span class="form-group">
+                    <label for=""></label> 
+                    <select class="form-control" name="paymode" id="paymode">
+                        <option  selected hidden>Pay-Mode</option>
+                        <option name="cash" value="cash">cash</option>
+                        <option name="debitcard" value="debitcard">debitcard</option>
+                        <option name="creditcard" value="creditcard">creditcard</option>
+                        <option name="epayment" value="epayment">epayment</option>
+                        <option name="onlinebanking" value="onlinebanking">onlinebanking</option>
+                    
+                    </select>
+                </span>
+                
+               
+                
+
+                 <span class="form-group">
+                    <label for=""></label>
+                    <select class="form-control" name="category" id="category">
+
+                         <option selected hidden>Category</option>
+                        <option   name = "food" value="food">food</option>
+                        <option name = "entertainment" value="entertainment">Entertainment</option>
+                        <option name = "business" value="business">Business</option>
+                        <option name ="rent" value="rent">Rent</option>
+                        <option name = "EMI" value="EMI">EMI</option>
+                        <option name = "other" value="other">other</option>
+            
+                    </select>
+                </div>
+
+               
+                
+                <input class="btn btn-danger" type="submit" value="Add" id="">
+        
+            </form>
+
+               </div>
+              
+        </div>
+    </div>
+    
+</div>
+   
+    {% endblock %}
